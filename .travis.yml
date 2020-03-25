@@ -6,4 +6,4 @@ before_install:
   - docker build  -t zaden/docker-reactapp -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true zaden/docker-react yarn run test -- --coverage
+  - docker run -e CI=true zaden/docker-reactapp yarn run test -- --coverage
